@@ -1,6 +1,12 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .box {
     border: 1px solid black;
     margin: 10px;
+    background-color: lightgray;
 }
 
 #box1 {
@@ -13,25 +19,25 @@
     height: 450px;
 }
 
-#box3 {
+#box3, #box4, #box5 {
+    display: inline-block;
     width: 300px;
     height: 375px;
-    display: inline-block;
 }
 
-#box4 {
-    width: 300px;
-    height: 375px;
-    display: inline-block;
-}
-
-#box5 {
-    width: 300px;
-    height: 375px;
-    display: inline-block;
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the start of the flex container */
 }
 
 #box6 {
     width: 480px;
     height: 225px;
 }
+
+#textBox {
+    width: 300px;
+    height: 225px;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
